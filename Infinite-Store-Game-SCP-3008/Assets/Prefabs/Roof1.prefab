@@ -303,6 +303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7225410347746541102}
+  - component: {fileID: 6586405137542864895}
   m_Layer: 0
   m_Name: Roof1
   m_TagString: Untagged
@@ -335,6 +336,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!205 &6586405137542864895
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8002334418816296084}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.5180106, z: 0.05375862}
+  m_Size: 21.862709
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.19582096
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8201905204794342175}
+    - renderer: {fileID: 609973630854396884}
+    - renderer: {fileID: 6687610720980373258}
+  m_Enabled: 1
 --- !u!1 &9061229192974763199
 GameObject:
   m_ObjectHideFlags: 0

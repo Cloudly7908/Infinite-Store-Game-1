@@ -10,6 +10,8 @@ public class Pickup : MonoBehaviour
 
     private GameObject heldOBj;
 
+    public GameObject icon;
+
     void Update()
     {
        
@@ -56,12 +58,18 @@ public class Pickup : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             holdParent.rotation *= Quaternion.Euler(1, 0, 0);
+
         }
 
         if (Vector3.Distance(heldOBj.transform.position, holdParent.position) > 0.1f)
         {
             Vector3 moveDistance = (holdParent.position - heldOBj.transform.position);
             heldOBj.GetComponent<Rigidbody>().AddForce(moveDistance * moveForce);
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            DropObjectFR();
         }
     }
 
@@ -77,6 +85,7 @@ public class Pickup : MonoBehaviour
 
             objRig.transform.parent = holdParent;
             heldOBj = pickObj;
+            icon.SetActive(true);
         }
     }
 
@@ -86,11 +95,25 @@ public class Pickup : MonoBehaviour
         heldrig.useGravity = true;
         heldrig.drag = 1;
         heldrig.freezeRotation = true;
-        heldrig.mass = 50;
+        heldrig.mass = 100;
 
         heldOBj.transform.parent = null;
         heldOBj = null;
+        icon.SetActive(false);
     }
 
-  
+    void DropObjectFR()
+    {
+        Rigidbody heldrig = heldOBj.GetComponent<Rigidbody>();
+        heldrig.useGravity = true;
+        heldrig.drag = 1;
+        heldrig.freezeRotation = false;
+        heldrig.mass = 100;
+
+        heldOBj.transform.parent = null;
+        heldOBj = null;
+        icon.SetActive(false);
+    }
+
+
 }
