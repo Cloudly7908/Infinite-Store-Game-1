@@ -386,6 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977459134610340224}
   - component: {fileID: -3683527346504526438}
+  - component: {fileID: 6071357905264584209}
   m_Layer: 3
   m_Name: End Sofa (Sofa Set)
   m_TagString: Moveable
@@ -425,6 +426,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!205 &6071357905264584209
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5586226384642469347}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.17481005, y: 0.47131515, z: -0.00006774068}
+  m_Size: 2.3495371
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.048893128
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4383399852370801291}
+    - renderer: {fileID: 7603633992348819979}
+    - renderer: {fileID: 4412874083428341461}
+    - renderer: {fileID: 2310593027456553737}
+  m_Enabled: 1
 --- !u!1 &5752760369268684450
 GameObject:
   m_ObjectHideFlags: 0

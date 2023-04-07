@@ -233,6 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3943558479308605613}
   - component: {fileID: 5283946995258898625}
+  - component: {fileID: 1920140971589782140}
   m_Layer: 3
   m_Name: Island Sofa (Sofa Set)
   m_TagString: Moveable
@@ -272,6 +273,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!205 &1920140971589782140
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6140938709163242444}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.12089443, z: -0.00000011920929}
+  m_Size: 1.9890461
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.05044011
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2886981512012363585}
+  m_Enabled: 1
 --- !u!1 &6410652596186907568
 GameObject:
   m_ObjectHideFlags: 0
