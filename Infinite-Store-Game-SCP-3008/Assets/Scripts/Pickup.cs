@@ -42,6 +42,12 @@ public class Pickup : MonoBehaviour
 
     void MoveObject()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            heldOBj.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            holdParent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
+
         if (Input.GetMouseButton(0))
         {
             holdParent.rotation *= Quaternion.Euler(0, 1, 0);
@@ -79,7 +85,7 @@ public class Pickup : MonoBehaviour
         Rigidbody heldrig = heldOBj.GetComponent<Rigidbody>();
         heldrig.useGravity = true;
         heldrig.drag = 1;
-        heldrig.freezeRotation = false;
+        heldrig.freezeRotation = true;
         heldrig.mass = 50;
 
         heldOBj.transform.parent = null;
